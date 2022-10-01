@@ -114,12 +114,6 @@ p{
     to   { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
 }
 
-.button{
-    text-decoration: none;
-    padding: 5px;
-    background-color: var(--secondaryColor);
-    width: 200px;
-}
 
 
 
