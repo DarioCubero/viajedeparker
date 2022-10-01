@@ -22,9 +22,9 @@ body{
     z-index: -2;
 }
 
-.container{
-    margin: 200px auto 0 auto;
-    width: 400px;
+.container1{
+    margin: 250px auto 0 auto;
+    width: 500px;
     text-align: center;
     padding: 5px 20px 20px 20px;
     position: relative;
@@ -113,7 +113,6 @@ p{
     from { transform: rotate(0deg) translateX(300px) rotate(0deg); }
     to   { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
 }
-
 
 
 
