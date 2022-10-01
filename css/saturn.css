@@ -1,0 +1,65 @@
+.satelite{
+    margin: 0 auto 0 auto;
+    width: 400px;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    position: relative;
+}
+
+
+.asteroid{
+    position: absolute;
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+
+.asteroid:nth-child(1){
+   left: -70px;
+   bottom: 250px;
+}
+
+@media(max-width: 768px){
+    .saturn{
+        display: none;
+    }
+}
+
+
+.saturn {
+    /* 
+     * Make the initial position to be the center of the circle you want this
+     * object follow.
+     */
+    position: absolute;
+    left: 170px;
+    top: -200px;
+
+    -webkit-animation: orbita 40s linear infinite;
+    -moz-animation: orbita 40s linear infinite;
+    -o-animation: orbita 40s linear infinite;
+    animation: orbita 40s linear infinite; 
+}
+
+@-webkit-keyframes orbita {
+    from { -webkit-transform: rotate(0deg) translateX(300px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}
+
+@-moz-keyframes orbita {
+    from { -moz-transform: rotate(0deg) translateX(300px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}
+
+@-o-keyframes orbita {
+    from { -o-transform: rotate(0deg) translateX(300px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}
+
+@keyframes orbita {
+    from { transform: rotate(0deg) translateX(300px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}
+
+
+

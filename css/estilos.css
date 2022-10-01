@@ -9,6 +9,7 @@ body{
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: white !important;    
 }
 
 #stars{
@@ -23,24 +24,17 @@ body{
 }
 
 .container1{
-    margin: 250px auto 0 auto;
-    width: 500px;
+    /* margin: 0px auto 0 auto; */
+    width: 700px;
     text-align: center;
     padding: 5px 20px 20px 20px;
-    position: relative;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(5px);
+    /* position: relative; */
+    /* z-index: 10; */
+    /* backdrop-filter: blur(5px); */
+    /* background: rgba(255,255,255,0.1); */
     border-radius: 15px;
-    z-index: 10;
 }
 
-.container2{
-    margin: 0 auto 0 auto;
-    width: 400px;
-    text-align: center;
-    padding: 0 20px 20px 20px;
-    position: relative;
-}
 
 h1{
     color: var(--primaryColor);
@@ -53,66 +47,22 @@ p{
     font-size: 30px;
 }
 
-/*.asteroid{
-    position: absolute;
-    animation: animate 10s linear infinite;
-    animation-delay: calc(-1s * var(--i));
+/* TOOLBAR ARROWS */
+
+/* Toolbar plugin */
+.impress-enabled div#impress-toolbar {
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    opacity: 0.6;
+    z-index: 10;
 }
-
-@keyframes animate{
-    0%,100%{
-        transform: translateY(-40px);
-    }
-    50%{
-        transform: translateY(40px);
-    }
+.impress-enabled div#impress-toolbar > span {
+    margin-right: 10px;
 }
-
-.asteroid:nth-child(1){
-   left: -70px;
-   bottom: 250px;
-}*/
-
-@media(max-width: 768px){
-    .saturn{
-        display: none;
-    }
+.impress-enabled div#impress-toolbar.impress-toolbar-show {
+    display: block;
 }
-
-.saturn {
-    /* 
-     * Make the initial position to be the center of the circle you want this
-     * object follow.
-     */
-    position: absolute;
-    left: 170px;
-    top: -200px;
-
-    -webkit-animation: orbita 40s linear infinite;
-    -moz-animation: orbita 40s linear infinite;
-    -o-animation: orbita 40s linear infinite;
-    animation: orbita 40s linear infinite; 
+.impress-enabled div#impress-toolbar.impress-toolbar-hide {
+    display: none;
 }
-
-@-webkit-keyframes orbita {
-    from { -webkit-transform: rotate(0deg) translateX(300px) rotate(0deg); }
-    to   { -webkit-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
-}
-
-@-moz-keyframes orbita {
-    from { -moz-transform: rotate(0deg) translateX(300px) rotate(0deg); }
-    to   { -moz-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
-}
-
-@-o-keyframes orbita {
-    from { -o-transform: rotate(0deg) translateX(300px) rotate(0deg); }
-    to   { -o-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
-}
-
-@keyframes orbita {
-    from { transform: rotate(0deg) translateX(300px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
-}
-
-
-
