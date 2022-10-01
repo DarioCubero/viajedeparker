@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<div id="stars"></div>
+
+<body>
+
+    <script type="text/javascript" src="./js/particles.min.js"></script>
+    <script type="text/javascript" src="./js/customStars.js"></script>
+    
+    
+    <div id="impress"
+    data-width="1024"
+    data-height="768"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000"
+    >
+        <!--1-->
+        <div class="step box" data-x="-1500" data-y="0">
+            <p>This is my first slide</p>
+        </div>
+
+        <div id="overview" class="step" data-x="4500" data-y="1500" data-scale="10" style="pointer-events: none;">
+        </div>
+
+        <!--2-->
+        <div class="step box" data-x="500" data-y="1200">
+                <h1>La Misión<h1>
+                <span class="try">-La misión consiste en acercar un dispositivo</span> 
+                <span class="try">máximo posible al sol para hacer pruebas científicas</span>
+                <h1>¿Qué es la sonda?</h1>
+                <span class="try">-La sonda espacial es un aparato pensado para lanzarse desde un cohete al espacio exterior.</span>
+                <span class="try">Tiene un escudo para protegerse del calor del Sol, muchos sensores (como si fueran cámaras) y</span>
+                <span class="try">unos paneles solares para que no deje de funcionar.</span>
+                <h1>Objetivos de la misión</h1>
+                <span class="try">- Saber qué hay más allá de la corona Solar para saber</span>
+                <span class="try">cómo son las estrellas y qué nos mandan (a parte de luz)</span>
+        </div>
+
+        <!--3-->
+        <div class="step box" data-x="500" data-y="3400">
+            <q><strong>LANZAMIENTO</strong></q><br>
+            <p>-El lanzamiento de la sonda Parker fue en el año <strong>2018</strong></p><br>
+            <p>-La ubicación del lanzamiento fue en <strong>Florida</strong> (Cabo Cañaveral)</p><br>
+        </div>
+
+        <!--4-->
+        <div class="step box" data-x="3500" data-y="1000">
+            <h1>La Órbita</h1>
+            <span class="try">Una vez lanzada la sonda, hará un recorrido parecido al de los planetas, alrededor del Sol</span>
+            <span class="try">Sin embargo hay que hacer que haya menos recorrido y la sonda se acerque cada vez más al Sol.</span>
+            <span class="try">Para hacer esto, hay que frenar la sonda de alguna manera y esa forma es hacer que la sonda</span>
+            <span class="try">pase cerca de Venus.</span>
+        </div>
+
+        <!--5-->
+        <div class="step box" data-x="5000" data-y="3500">
+            <q><strong>¡NOS BOMBARDEAN POLVOS ESPACIALES!</strong></q><br>
+            <p>-Pequeños granos de polvo se estrellan a alta velocidad, lo que provoca <strong>explosiones de plasma y nubes de escombros.</strong></p><br>
+            <p>-El polvo dañino es muy pequeño, mide <strong>menos de una cuarta parte del ancho del cabello humano.</strong></p><br>
+            <p>-Los impactos hasta ahora no han sido lo suficientemente grandes como para superar el blindaje de Parker. ¡Esto demuestra que <strong>fue construida para sobrevivir!</strong></p>
+        </div>
+
+        <!--6-->
+        <div class="step box" data-x="6200" data-y="-1500">
+            <h1>Velocidad de la sonda</h1>
+            <span class="try">La sonda Parker pasa cerca del sol a una velocidad de 700000km/h</span>
+            <span class="try">A esta velocidad se podría recorrer la distancia entre las ciudades</span>
+            <span>de Tokio y Nueva York en menos de 11 minutos.</span>
+            <h1>Viento solar</h1>
+            <span class="try">El viento solar son corrientes de partículas con carga eléctrica.</span>
+            <span class="try">El viento solar se libera de la corona solar y una velocidad suficiente como para</span>
+            <span class="try">el campo magnético(esto seía como si una brújula apuntara al sur en vez de al norte).</span>
+        </div>
+
+        <!--7-->
+        <div class="step box" data-x="8700" data-y="-1500">
+            <p>This is my first slide</p>
+        </div>
+
+        <!--8-->
+        <div class="step box" data-x="8700" data-y="1300">
+            <h1>Temperatura, calor y blindaje térmico</h1>
+            <span class="try">La sonda tiene un escudo térmico que permite que la parte más resistente al calor soporte solo 1400ºC</span>
+            <span class="try">El escudo térmico proteje la parte sensible de la sonda para que no se caliente y se estropee</span>
+        </div>
+
+        <!--9-->
+        <div class="step box" data-x="10700" data-y="3300">
+            <p>This is my first slide</p>
+        </div>
+
+
+
+    </div>
+
+    <div id="impress-toolbar"></div>
+    <div class="impress-progress"></div>
+
+
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+</body>
+</html>
