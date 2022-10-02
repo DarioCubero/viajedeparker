@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaje de Parker</title>
-
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="./img/parker.png">
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
@@ -28,39 +29,38 @@
     <script type="text/javascript" src="./js/customStars.js"></script>
 
     <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 20%"
+        <div id="progressbar" class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%"
             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
         </div>
     </div>
 
     <!-- CONTENEDOR IMPRESS -->
     <div id="impress" data-width="1024" data-height="768" data-max-scale="3" data-min-scale="0"
-        data-transition-duration="1000" data-perspective="1000">
+        data-transition-duration="2000" data-perspective="1000">
 
         <!-- BORED -->
         <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
             <!-- START -->
             <section class="container1">
                 <h1>Viaje de Parker</h1>
-                <p>Estás a punto de iniciar tu aventura espacial.</p>
-                <p>¿Preparad@?</p>
+                    <p class="font3">Estás a punto de iniciar <br /> tu aventura espacial.</p>
+                    <p class="font2">¿Preparad@?</p>
             </section>
         </div>
 
         <!--2-->
         <div class="step box" data-x="500" data-y="1200">
             <h1>La Misión</h1>
-            <span>-La misión consiste en acercar un dispositivo</span>
-            <span>máximo posible al sol para hacer pruebas científicas</span>
+            <span class="font4">-La misión consiste en acercar un dispositivo</span>
+            <span class="font4">máximo posible al sol para hacer pruebas científicas</span>
             <h2>¿Qué es la sonda?</h2>
-            <span>-La sonda espacial es un aparato pensado para lanzarse desde un cohete al espacio
+            <span class="font4">-La sonda espacial es un aparato pensado para lanzarse desde un cohete al espacio
                 exterior.</span>
-            <span>Tiene un escudo para protegerse del calor del Sol, muchos sensores (como si fueran
-                cámaras) y</span>
-            <span>unos paneles solares para que no deje de funcionar.</span>
+            <span class="font4">Tiene un escudo para protegerse del calor del Sol, muchos sensores (como si fueran
+                cámaras) y unos paneles solares para que no deje de funcionar.</span>
             <h2>Objetivos de la misión</h2>
-            <span>- Saber qué hay más allá de la corona Solar para saber</span>
-            <span>cómo son las estrellas y qué nos mandan (a parte de luz)</span>
+            <span class="font4">- Saber qué hay más allá de la corona Solar para saber</span>
+            <span class="font4">cómo son las estrellas y qué nos mandan (a parte de luz)</span>
         </div>
 
         <!--3-->
@@ -70,22 +70,24 @@
             </div>
             <div class="col-md-7 text-center">
                 <h1>LANZAMIENTO</h1>
-                <p>El lanzamiento de la sonda Parker fue en el año</p>
-                <h1>2018<sup></sup></h1>
-                La ubicación del lanzamiento fue en
-                <p><strong>Florida</strong> (Cabo Cañaveral)</p>
+                <p class="font4">El lanzamiento de la sonda Parker <br>fue en el año</p>
+                <h2><sup>2018</sup></h2>
+                <p class="font4">La ubicación del lanzamiento fue en</p>
+                <h2 class="font3"><strong>Florida</strong> (Cabo Cañaveral)</h2>
             </div>
         </div>
 
         <!--4-->
         <div class="step box text-center" data-x="3500" data-y="1000" style="position: relative;">
-            <div style="z-index: 5;">
+            <div style="z-index: 5; color:black">
                 <h1>La Órbita</h1>
-                Una vez lanzada la sonda, hará un recorrido <br />
-                parecido al de los planetas, alrededor del Sol
-                La sonda pasará<br /> cerca de Venus para acercarse más al Sol
+                <p class="font3">
+                    Una vez lanzada la sonda, hará un recorrido 
+                    parecido al de los planetas, alrededor del Sol
+                    La sonda pasará cerca de Venus para <br />acercarse más al Sol.
+                </p><br /> 
             </div>
-            <img src="./img/Venus.png" style="position: absolute; top:-290px; left: -80px; z-index: -2;" />
+            <img src="./img/Venus.png" width="200%" style="position: absolute; top:-500px; left:-300px; z-index: -2;"/>
             <div class="sonda" style="z-index: -1;"><img src="./img/parker.png" width="100" height="100" /></div>
         </div>
 
@@ -94,7 +96,7 @@
             <h1>¡NOS BOMBARDEAN POLVOS ESPACIALES!</h1><br>
             <div class="row">
                 <div class="col-6">
-                    <img src="img/polvo_estelar.png" width="500" />
+                    <img src="img/polvo_estelar.png" width="500"/>
                 </div>
                 <div class="col-6">
                     <p>-Pequeños granos de polvo se estrellan a alta velocidad, lo que </p>
@@ -111,22 +113,22 @@
         </div>
 
         <!--6-->
-        <div class="step box" data-x="6200" data-y="-1500">
+        <div class="step box text-center" data-x="6200" data-y="-1500">
             <h1>Velocidad de la sonda</h1>
             La sonda Parker pasa cerca del sol a una velocidad de 700000km/h
             A esta velocidad se podría recorrer la distancia entre las ciudades
             de Tokio y Nueva York en menos de 11 minutos.
             <div class="row">
                 <div class="col-3">
-                    <img src="img/japan_flag.png" width="100" height="100" />
+                    <img src="img/japan_flag.png" width="200" />
                 </div>
 
                 <div class="col-6 parker_sound6">
-                    <img src="./img/parker.png" width="100" height="100" />
+                    <img src="./img/parker.png" width="200" />
                 </div>
 
                 <div class="col-3">
-                    <img src="img/ue_flag.png" width="100" height="100" />
+                    <img src="img/ue_flag.png" width="200" />
                 </div>
             </div>
             <h1>Viento solar</h1>
@@ -160,13 +162,15 @@
         <div class="step box" data-x="8700" data-y="1300" style="position: relative;">
             <div style="background-color: black; border-radius: 15px; padding: 30px 30px 30px 30px; z-index: -2;">
                 <h1>Blindaje térmico</h1>
-                La sonda tiene un escudo térmico que permite que la parte más resistente al calor soporte
-                solo 1400ºC.
-                El escudo térmico proteje la parte sensible de la sonda para que no se caliente y se
-                estropee.
+                <p class="font4">
+                    La sonda tiene un escudo térmico que permite que la parte más resistente al calor soporte
+                    solo 1400ºC.
+                    El escudo térmico proteje la parte sensible de la sonda para que no se caliente y se
+                    estropee.
+                </p>
             </div>
             <div>
-                <img src="./img/sun.webp" width="1000" height="1000" style="position: absolute; top: -400px; left: -150px; z-index: -3;"/>
+                <img src="./img/sun.webp" width="1200" style="position: absolute; top: -400px; left: -250px; z-index: -3;"/>
             </div>
             <div class="parker_sound7" style="position: absolute; left:600px; top: 140px; z-index: 1;">
             </div>
@@ -175,19 +179,20 @@
         </div>
 
         <!--9-->
-        <div class="step box" data-x="10700" data-y="3300">
-            <p>This is my first slide</p>
+        <div id="ing" class="step" data-x="2900" data-y="2900" data-z="0" data-rotate="0" data-scale="1.2"
+        data-transition-duration="4000">
+            <h1 style="font-size: 40px !important;">Gracias por acompañarnos en ésta aventura.</h1>
+            <h2 style="font-size: 30px !important;">Powered by:</h2>
+            <img src="img/binary_mood.jpg" width="400"/>
         </div>
     </div>
 
-    <div id="impress-toolbar"></div>
+    <div style="display: none;" id="impress-toolbar"></div>
 
     <div class="hint">
         <p>Pulsa F11 para sumérgirte en la experiencia a pantalla completa. </p>
         <p>Para navegar usa las teclas 'barra espaciadora' o las flechas ← y →. <br />
     </div>
-
-
 
     <script>
         if ("ontouchstart" in document.documentElement) {
