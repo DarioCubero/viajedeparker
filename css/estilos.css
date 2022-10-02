@@ -1,9 +1,21 @@
 :root {
-    --primaryColor: rgb(255, 120, 47);
+    --primaryColor: #fc3d21;
     --secondaryColor: rgb(243, 243, 243);
 }
 
+@font-face {
+    font-family: 'Univia';
+    src: url("../font/UniviaPro-Regular\ 400.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Univia';
+    font-weight: bold;
+    src: url("../font/UniviaPro-Regular\ 400.otf") format("opentype");
+}
+
 body{
+    font-family: 'Univia';
     background: radial-gradient(ellipse at bottom,#1b2735 0%, #090a0f 100% );
     height: 100%;
     margin: 0;
@@ -35,16 +47,29 @@ body{
     border-radius: 15px;
 }
 
+.box{
+    width: 700px;
+    padding: 30px;
+}
 
 h1{
     color: var(--primaryColor);
     font-size: 50px;
     font-weight: 700;
+    text-align: center;
 }
 
-p{
-    color: var(--secondaryColor);
-    font-size: 30px;
+/* Impares */
+.box:nth-child(odd){
+    width: 1000px;
+    text-align: left;
+    font-size: 20px;
+    padding: 30px;
+}
+
+/* Pares */
+.box:nth-child(even){
+    width: 650px;
 }
 
 /* TOOLBAR ARROWS */
@@ -66,3 +91,54 @@ p{
 .impress-enabled div#impress-toolbar.impress-toolbar-hide {
     display: none;
 }
+
+/* Oscilación Smooth */
+.smooth {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
+
+/* Coloritos Aurora Boreal */
+.cambioColorVerde{
+    color: white;
+    animation: example 2s alternate ease-in-out infinite;
+}
+@keyframes example {
+    from {color: white;}
+    to {color: lawngreen;}
+  }
+
+.cambioColorRojo{
+    color: white;
+    animation: example2 3s alternate ease-in-out infinite;
+}
+@keyframes example2 {
+    from {color: white;}
+    to {color: red;}
+  }
+
+.cambioColorAzul{
+    color: white;
+    animation: example3 1s alternate ease-in-out infinite;
+}
+@keyframes example3 {
+    from {color: white;}
+    to {color: blue;}
+  }
+
+.cambioColorPurpura{
+    color: white;
+    animation: example4 2.5s alternate ease-in-out infinite;
+}
+@keyframes example4 {
+    from {color: white;}
+    to {color: purple;}
+  }

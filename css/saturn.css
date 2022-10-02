@@ -26,40 +26,64 @@
 }
 
 
-.saturn {
+.sonda {
     /* 
      * Make the initial position to be the center of the circle you want this
      * object follow.
      */
     position: absolute;
-    left: 170px;
-    top: -200px;
+    left: 260px;
+    top: 0;
 
-    -webkit-animation: orbita 40s linear infinite;
-    -moz-animation: orbita 40s linear infinite;
-    -o-animation: orbita 40s linear infinite;
-    animation: orbita 40s linear infinite; 
+    -webkit-animation: sonda 40s linear infinite;
+    -moz-animation: sonda 40s linear infinite;
+    -o-animation: sonda 40s linear infinite;
+    animation: sonda 40s linear infinite; 
 }
 
-@-webkit-keyframes orbita {
-    from { -webkit-transform: rotate(0deg) translateX(300px) rotate(0deg); }
-    to   { -webkit-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+@-webkit-keyframes sonda {
+    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }
 
-@-moz-keyframes orbita {
-    from { -moz-transform: rotate(0deg) translateX(300px) rotate(0deg); }
-    to   { -moz-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+@-moz-keyframes sonda {
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }
 
-@-o-keyframes orbita {
-    from { -o-transform: rotate(0deg) translateX(300px) rotate(0deg); }
-    to   { -o-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+@-o-keyframes sonda {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }
 
-@keyframes orbita {
-    from { transform: rotate(0deg) translateX(300px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+@keyframes sonda {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }
 
+.parker_sound6{
+    animation: animate 8s linear infinite;
+}
 
+@keyframes animate{
+    0%,100%{
+        transform: translateX(-40px);
+    }
+    50%{
+        transform: translateX(230px);
+    }
+}
 
+.parker_sound7{
+    height: 150px;
+    width: 150px;
+    background: rgba(0, 179, 255, 0.3);
+    border-radius: 50%;
+    display: inline-block;
+    animation: shield 2s alternate ease-in-out infinite;
+}
+
+@keyframes shield {
+    from {background: rgba(0, 179, 255, 0.3);}
+    to {background: rgba(0, 179, 255, 0.6);}
+}

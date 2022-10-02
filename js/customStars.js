@@ -30,7 +30,7 @@ particlesJS("stars", {
         "random": true, //true
         "anim": {
           "enable": true, //true
-          "speed": 0.1, //0.1
+          "speed": 0.5, //0.1
           "opacity_min": 0.2, //0.2
           "sync": false
         }

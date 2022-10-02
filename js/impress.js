@@ -1766,9 +1766,9 @@
         }
 
         var toolbar = document.querySelector( "#impress-toolbar" );
-        if ( toolbar ) {
-            addToolbarButton( toolbar );
-        }
+        // if ( toolbar ) {
+        //     addToolbarButton( toolbar );
+        // }
 
         api.lib.gc.pushCallback( function() {
             clearTimeout( timeoutHandle );
@@ -1864,30 +1864,6 @@
         }
     };
 
-    var addToolbarButton = function( toolbar ) {
-        var html = '<button id="impress-autoplay-playpause" ' + // jshint ignore:line
-                   'title="Autoplay" class="impress-autoplay">' + // jshint ignore:line
-                   getButtonText() + "</button>"; // jshint ignore:line
-        toolbarButton = makeDomElement( html );
-        toolbarButton.addEventListener( "click", function() {
-            toggleStatus();
-            setAutoplayTimeout( 7 );
-            // if ( status === "playing" ) {
-            //     if ( autoplayDefault === 0 ) {
-            //         autoplayDefault = 7;
-            //     }
-            //     if ( currentStepTimeout === 0 ) {
-            //         currentStepTimeout = autoplayDefault;
-            //     }
-            //     setAutoplayTimeout( currentStepTimeout );
-            // } else if ( status === "paused" ) {
-            //     setAutoplayTimeout( 0 );
-            // }
-        } );
-
-        util.triggerEvent( toolbar, "impress:toolbar:appendChild",
-                      { group: 10, element: toolbarButton } );
-    };
 
 } )( document );
 
